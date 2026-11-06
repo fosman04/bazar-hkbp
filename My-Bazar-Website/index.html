@@ -694,7 +694,7 @@
             const totalQtySemua = keranjang.reduce((sum, item) => sum + item.qty, 0);
             const totalBayarSemua = keranjang.reduce((sum, item) => sum + (item.harga * item.qty), 0);
 
-            if(WEB_APP_URL === "https://script.google.com/macros/s/AKfycbz2VsD2pS-iNaeLStxyhGO3Wr3ySSoxEcjzZYRLaNqX62uDAqEg9J8do1oT8acx-sm6/exec") {
+            if(WEB_APP_URL === "kosong") {
                 alert(`Simulasi Berhasil!\n\nID: ${idPesanan}\nNama: ${nama}\nPembayaran: ${pembayaran}\nCatatan Belum Bayar: ${catatanBelumBayar || '-'}\nPIC: ${pic}\nMenu: ${namaProdukGabungan}`);
                 resetFormDanKeranjang();
                 return;
